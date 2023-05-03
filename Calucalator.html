@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calucalator Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mainhub {
+            height: 500px;
+            width: 500px;
+            background-color: darkturquoise;
+            margin: 65px auto;
+            padding: 35px 50px;
+        }
+        
+        .main {
+            /* height: 440px; */
+            width: 400px;
+            background-color: blue;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .main .top {
+            height: 90px;
+            width: 400px;
+            background-color: rgb(29, 29, 29);
+        }
+        
+        .main .center {
+            /* height: 70px; */
+            width: 400px;
+            background-color: rgb(202, 199, 199);
+            display: grid;
+            /* align-items: center;s */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 70px;
+        }
+        
+        .x {
+            border: 1px solid gray;
+            line-height: 70px;
+            text-align: center;
+            /* padding: 35px 32px; */
+        }
+        
+        .x a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 35px 32px;
+        }
+        
+        .main .bottom {
+            /* height: 280px; */
+            /* width: 400px; */
+            display: grid;
+            grid-template-columns: 7.5fr 2.5fr;
+        }
+        
+        .main .bottom .num {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 70px 70px 70px 70px;
+            background-color: #fff;
+        }
+        
+        .main .bottom .equal {
+            background-color: darkorange;
+            line-height: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainhub">
+        <div class="main">
+            <div class="top"></div>
+            <div class="center">
+                <div class="plus x"><a href=""><i class="fa-solid fa-plus"></i></a></div>
+                <div class="minus x"><a href=""><i class="fa-solid fa-minus"></i></a></div>
+                <div class="multi x">
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="divide x"><a href=""><i class="fa-solid fa-divide"></i></a></div>
+
+            </div>
+            <div class="bottom">
+                <div class="num ">
+                    <div class="number x"><a href="">7</a></div>
+                    <div class="number x"><a href="">8</a></div>
+                    <div class="number x"><a href="">9</a></div>
+                    <div class="number x">
+                        <a href="">4</a>
+                    </div>
+                    <div class="number x"><a href="">5</a></div>
+                    <div class="number x"><a href="">6</a></div>
+                    <div class="number x"><a href="">1</a></div>
+                    <div class="number x"><a href="">2</a></div>
+                    <div class="number x"><a href="">3</a></div>
+                    <div class="number x">
+                        <a href="">0</a>
+                    </div>
+                    <div class="number x"><a href="">.</a></div>
+                    <div class="number x"><a href="">AC</a></div>
+                </div>
+                <div class="equal x">
+                    <a href=""><i class="fa-solid fa-equals"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
